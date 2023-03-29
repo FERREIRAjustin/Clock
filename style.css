@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #616161;
+}
+
+.clock {
+    border-radius: 50%;
+    background-color: #6c6c6c;
+    overflow: hidden;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.seconde {
+    display: flex;
+    justify-content: center;
+    width: 0;
+    height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 152px solid #ff000061;
+    position: absolute;
+    left: 42%;
+	transform-origin: bottom center;
+	transform: rotate(0deg);
+    top: -1px;
+}
+
+.minute {
+    position: absolute;
+    height: 140px;
+    width: 3px;
+    background-color: red;
+    left: 50%;
+	transform-origin: center 120px;
+	transform: rotate(0deg);
+    top: 30px;
+}
+
+.heure {
+    position: absolute;
+    height: 120px;
+    width: 3px;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    transform-origin: center 100px;
+	transform: rotate(45deg);
+    top: 50px;
+}
+
+.time {
+    position: absolute;
+    transform-origin: center 10px;
+    top: -130px;
+    transform: rotate(0deg);
+    color: white;
+}
+
+.barre {
+    position: absolute;
+    height: 8px;
+    width: 3px;
+    background-color: black;
+}
+
+.barre:nth-child(1) {
+    left:50%;
+    top:0;
+}
+.barre:nth-child(2) {
+    left: 75%;
+    top: 6.69%;
+    transform: rotate(30deg);
+}
+.barre:nth-child(3) {
+    left: 92.1%;
+    top: 25%;
+    transform: rotate(60deg);
+}
+.barre:nth-child(4) {
+    left: 98%;
+    top: 50%;
+    transform: rotate(90deg);
+}
+.barre:nth-child(5) {
+    left: 91%;
+    top: 75%;
+    transform: rotate(120deg);
+}
+.barre:nth-child(6) {
+    left: 75%;
+    top: 90.5%;
+    transform: rotate(150deg);
+}
+.barre:nth-child(7) {
+    left: 50%;
+    top: 97.5%;
+    transform: rotate(180deg);
+}
+.barre:nth-child(8) {
+    left: 25%;
+    top: 90.5%;
+    transform: rotate(210deg);
+}
+.barre:nth-child(9) {
+    left: 8.5%;
+    top: 75%;
+    transform: rotate(240deg);
+}
+.barre:nth-child(10) {
+    left: 1%;
+    top: 50%;
+    transform: rotate(270deg);
+}
+.barre:nth-child(11) {
+    left: 7.0%;
+    top: 25%;
+    transform: rotate(300deg);
+}
+.barre:nth-child(12) {
+    left: 25%;
+    top: 6.69%;
+    transform: rotate(330deg);
+}
